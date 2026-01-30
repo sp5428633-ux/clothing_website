@@ -12,9 +12,7 @@ body{
     color: black;
     
 }
-.card-title {
-    background-color: rgb(142, 139, 139);
-}
+
 a{
     text-decoration: none;
      color: black;
@@ -26,4 +24,36 @@ header{
 footer{
     background-color: rgb(142, 139, 139);
     color: black;
+    
 }
+.social{
+    font-size: x-large;
+    margin-right: 15px;
+    color: red;
+}
+.bi-youtube{
+    color: red;
+}
+.bi-facebook{
+    color: blue;
+}
+.bi-instagram{
+    color: rgb(155, 75, 88);
+}
+.l-d{
+    list-style: none;
+}
+.mrp{
+ text-decoration: line-through;
+ 
+}
+.rs{
+    font-size: large;
+    font-weight: bolder;
+    
+    
+}
+ .price{
+    line-height: 4;
+    display: flex;
+} 
