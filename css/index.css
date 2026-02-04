@@ -120,3 +120,113 @@ i{
 .bi-tags-fill{
     color: red;
 }
+
+.c_f{
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgb(98, 96, 96);
+}
+.about-title{
+       font-weight: bolder;
+       
+}
+
+.different-card {
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.different-card i {
+  font-size: 40px;
+  color: #fd7e14; /* brand orange */
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.different-card h5 {
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.different-card p {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+/* Hover Effects */
+.different-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.different-card:hover i {
+  color: #dc3545; /* red on hover */
+}
+.offer-card {
+  background: #ffffff;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.offer-card i {
+  font-size: 42px;
+  color: #dc3545; /* Crazy Fit red */
+  margin-bottom: 15px;
+  transition: 0.3s;
+}
+
+.offer-card h5 {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.offer-card p {
+  font-size: 14px;
+  color: #6c757d;
+}
+
+/* Hover effect */
+.offer-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.15);
+}
+
+.offer-card:hover i {
+  color: #fd7e14; /* orange hover */
+}
+
+
+.why-card {
+  background: linear-gradient(135deg, #ffffff, #f8f9fa);
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  transition: 0.3s ease;
+}
+
+.why-card i {
+  font-size: 50px;
+  color: #fd7e14; /* brand orange */
+  margin-bottom: 15px;
+}
+
+.why-card h2 {
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.why-card p {
+  font-size: 16px;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Hover effect */
+.why-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 55px rgba(0, 0, 0, 0.25);
+}
