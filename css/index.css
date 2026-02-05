@@ -107,6 +107,7 @@ i{
     box-shadow: 0 14px 30px rgba(0, 0, 0, 0.18);
     border-color: #000;
     margin-top: 10px;
+    margin-bottom: 10px;
 }
 .bi-gem{
     margin-right: 10px;
@@ -284,4 +285,9 @@ i{
 }
 .bi-lightning-charge{
   color: orange;
+}
+
+.about-main{
+  background-color: rgb(210, 190, 190);
+  padding: 10px;
 }
