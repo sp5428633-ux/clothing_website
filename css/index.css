@@ -230,3 +230,58 @@ i{
   transform: translateY(-6px);
   box-shadow: 0 20px 55px rgba(0, 0, 0, 0.25);
 }
+
+/* .about_slider{
+  
+}
+.about_slider:hover{
+  
+
+} */
+ .about-banner {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.about-banner img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.6s ease;
+}
+
+.about-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.about-banner:hover img {
+  transform: scale(1.08);
+}
+
+.about-banner:hover::after {
+  opacity: 1;
+}
+
+.about-banner-content {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  z-index: 2;
+  transition: transform 0.5s ease;
+}
+
+.about-banner:hover .about-banner-content {
+  transform: translateY(-5px);
+}
+.bi-lightning-charge{
+  color: orange;
+}

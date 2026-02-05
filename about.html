@@ -67,7 +67,9 @@
     <main>
         <section>
             <div class="container">
-                <img src="images/hero-banner2.jpg" alt="" class="img-fluid mt-2">
+                <div class="about-banner">
+                <img src="images/hero-banner2.jpg" alt="" class="img-fluid img  ">
+                </div>
                 <div class="row">
                     <div class="col-md-12">
                         <div class="card mt-5 p-4" style="width: auto;">
@@ -303,8 +305,8 @@
                     <ul class="l-d">
                         <li><a class="text-dark" href="index.html">Home</a></li>
                         <li><a class="text-dark" href="about.html">About Us</a></li>
-                        <li><a class="text-dark" href="services.html">Accessories</a></li>
-                        <li><a class="text-dark" href="photo_gallery.html">Contact Us </a></li>
+                        <li><a class="text-dark" href="accessories.html">Accessories</a></li>
+                        <li><a class="text-dark" href="contact_us.html">Contact Us </a></li>
 
                     </ul>
                 </div>
@@ -335,7 +337,7 @@
                 </div>
                 <hr>
                 <div class="col-md-12 text-center">
-                    <h5>&copy;2026 CrazyFit All Right Reserved</h5>
+                    <h5>&copy;<span id="year"></span> CrazyFit All Right Reserved</h5>
                 </div>
             </div>
         </div>
@@ -351,6 +353,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
+        <script>
+                document.getElementById('year').innerText=new Date().getFullYear();
+         </script>
 </body>
 
 </html>

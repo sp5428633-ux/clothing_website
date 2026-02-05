@@ -17,14 +17,16 @@ a{
      color: black;
 }
 header{
-    background-color: rgb(142, 139, 139);
+    /* background-color: rgb(142, 139, 139); */
+    background-color: #e57921;
     color: black;
     position: sticky;
     top:0px;
     z-index: 3;
 }
 footer{
-    background-color: rgb(142, 139, 139);
+    /* background-color: rgb(142, 139, 139); */
+    background-color: #e57921;
     color: black;
     
 }
