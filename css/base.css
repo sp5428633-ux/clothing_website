@@ -1,11 +1,5 @@
 
-.title{
-    font-family: cursive;
-    text-decoration: none;
-    color: black;
-    font-size: x-large;
-    padding-right: 25px;
-}
+
 body{
     background-color: white;
     color: black;
@@ -17,16 +11,109 @@ a{
      color: black;
 }
 header{
-    /* background-color: rgb(142, 139, 139); */
-    background-color: #e57921;
-    color: black;
+   
+   
+    background-color: goldenrod; 
+   color: black;
     position: sticky;
     top:0px;
     z-index: 3;
 }
 footer{
-    /* background-color: rgb(142, 139, 139); */
-    background-color: #e57921;
-    color: black;
+
+    background-color: goldenrod; 
+  color: black;
     
+}
+
+.logo{
+     filter: drop-shadow(0 4px 8px rgba(0,0,0,0.35));
+}
+.logo:hover {
+  filter: drop-shadow(0 6px 12px rgba(0,0,0,0.45));
+}
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
+  
+  header {
+    padding: 0;
+  }
+  
+  footer {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  
+  .container, .container-fluid {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* Mobile navbar layout - reorder elements */
+  .navbar-brand {
+    order: 1;
+  }
+  
+  .navbar .d-flex {
+    order: 2;
+    margin-right: auto;
+  }
+  
+  .navbar-toggler {
+    order: 3;
+    margin-left: auto;
+  }
+  
+  .navbar-collapse {
+    order: 4;
+    width: 100%;
+  }
+}
+
+/* Option 2: Bold & Sophisticated header/footer theme */
+.site-header-theme {
+  background-color: goldenrod; /* header background - red */
+  color: black; /* header text - white */
+}
+.site-header-theme .navbar-brand,
+.site-header-theme .nav-link,
+.site-header-theme .navbar-toggler {
+  color: black !important;
+}
+.site-header-theme .nav-link:hover {
+  color: #ffc107 !important; /* gold accent on hover */
+}
+.site-header-theme .navbar .d-flex a.text-dark i {
+  color: black; /* ensure icons are white */
+}
+
+footer.site-footer-theme {
+  background-color: goldenrod; /* footer background - black */
+  color: black; /* footer text - gold */
+}
+footer.site-footer-theme a {
+  color: black !important;
+}
+footer.site-footer-theme .text-center h5 {
+  color: black;
+}
+.link_hover:hover{
+     color: #ffc107 !important;
+}
+.modal-header{
+    background-color:goldenrod ;
+}
+.dropdown-menu{
+    background-color: goldenrod;
+    color: black;
+
+}
+
+.dropdown-item:hover{
+    background-color: goldenrod;
+    color: #ffc107 !important;   
 }
