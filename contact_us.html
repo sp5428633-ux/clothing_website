@@ -13,7 +13,7 @@
 </head>
 
 <body>
-     <!-- header starts -->
+    <!-- header starts -->
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark site-header-theme">
             <div class="container-fluid">
@@ -62,7 +62,8 @@
 
                     <!-- Cart -->
                     <a href="#" class="text-dark position-relative">
-                        <i class="bi bi-cart fs-4 "></i>   <span id="cart-count" class=" position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
+                        <i class="bi bi-cart fs-4 "></i> <span id="cart-count"
+                            class=" position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
                     </a>
 
                     <!-- Login -->
@@ -129,16 +130,28 @@
         <section>
             <div class="container my-5">
                 <div class="row g-4">
-
                     <div class="col-md-6">
-                        <h4 class="mb-3">Send Us a Message</h4>
-
-                        <input type="text" class="form-control mb-3" placeholder="Your Name">
-                        <input type="email" class="form-control mb-3" placeholder="Your Email">
-                        <textarea class="form-control mb-3" rows="4" placeholder="Your Message"></textarea>
-
-                        <button class="btn send_btn w-100">Send Message</button>
+                        <form onsubmit="return validate()">
+                            <h4 class="mb-3">Send Us a Message</h4>
+                            <div>
+                                <input type="text" class="form-control mb-3" id="name" name="name"
+                                    placeholder="Your Name">
+                                     <span class="text-danger" id="nameError"></span>
+                            </div>
+                            <div>
+                                <input type="email" class="form-control mb-3" id="mail" name="mail"
+                                    placeholder="Your Email">
+                                     <span class="text-danger" id="mailError"></span>
+                            </div>
+                            <div>
+                                <textarea class="form-control mb-3" rows="4" id="message" name="message"
+                                    placeholder="Your Message"></textarea>
+                                <span class="text-danger" id="messageError"></span>
+                            </div>
+                            <button class="btn send_btn w-100" type="submit">Send Message</button>
+                        </form>
                     </div>
+
 
                     <div class="col-md-6">
                         <h4 class="mb-3"><i class="bi bi-geo-alt-fill"></i> Reach Out to Us</h4>
@@ -160,14 +173,14 @@
 
         <!-- section three starts here  -->
         <div class="container my-5 text-center">
-            
+
 
             <h5 class="mt-4">Stay Connected</h5>
             <div class="d-flex justify-content-center gap-3 fs-4">
-              <a href="https://www.instagram.com/" target="_blank">  <i class="bi bi-instagram text-danger"></i> </a>
-               <a href="https://www.facebook.com/" target="_blank"> <i class="bi bi-facebook text-primary"></i> </a>
-               <a href="https://www.x.com/" target="_blank"> <i class="bi bi-twitter text-info"></i> </a>
-               <a href="https://www.youtube.com/" target="_blank"> <i class="bi bi-youtube text-danger"></i> </a>
+                <a href="https://www.instagram.com/" target="_blank"> <i class="bi bi-instagram text-danger"></i> </a>
+                <a href="https://www.facebook.com/" target="_blank"> <i class="bi bi-facebook text-primary"></i> </a>
+                <a href="https://www.x.com/" target="_blank"> <i class="bi bi-twitter text-info"></i> </a>
+                <a href="https://www.youtube.com/" target="_blank"> <i class="bi bi-youtube text-danger"></i> </a>
             </div>
         </div>
         <!-- section three starts here  -->
@@ -182,7 +195,7 @@
 
 
 
-     <!-- footer starts here -->
+    <!-- footer starts here -->
     <footer class="site-footer-theme pt-5">
         <div class="container-fluid">
             <div class="row">
@@ -219,18 +232,19 @@
                         &#128231; Email:pimpri@gmail.com<br>
                         &#128222; Mobile No:7845128956
                     </p>
-                    <div>
-                        <a href="https://www.facebook.com/" target="_blank"> <i class="bi bi-facebook social "> </i>
+
+                </div>
+                <div class="row">
+                    <div class="social col-md-12">
+                        <a href="https://www.facebook.com/" target="_blank"> <i class="bi bi-facebook  "> </i>
                         </a>
-                        <a href="https://www.youtube.com/" target="_blank"><i class="bi bi-youtube social"></i></a>
-                        <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram social"></i></a>
-
-
+                        <a href="https://www.youtube.com/" target="_blank"><i class="bi bi-youtube "></i></a>
+                        <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram "></i></a>
                     </div>
                 </div>
                 <hr>
                 <div class="col-md-12 text-center">
-                    <h5>&copy;<span id="year"></span> Crazy Fit. All rights reserved.</h5>
+                    <h6>&copy;<span id="year"></span> Crazy Fit. All rights reserved.</h6>
 
 
                 </div>
@@ -243,8 +257,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
-        <script src="js/base.js"> </script>
-        
+    <script src="js/base.js"> </script>
+
 </body>
 
 </html>
