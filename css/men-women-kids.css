@@ -1,0 +1,162 @@
+.item-size{
+    height: 450px;
+
+}
+
+/* ============================= */
+/* GLOBAL FIXES */
+/* ============================= */
+
+body {
+  overflow-x: hidden;
+}
+
+marquee {
+  font-weight: bold;
+}
+
+.card img.item-size {
+  height: 220px;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.card {
+  border-radius: 12px;
+}
+
+.card h5 {
+  font-size: 16px;
+}
+
+.card p {
+  font-size: 15px;
+  font-weight: bold;
+}
+
+/* Buttons spacing */
+.card .btn {
+  margin: 4px;
+}
+
+/* ============================= */
+/* OFFER IMAGE */
+/* ============================= */
+
+.offer_img {
+  border-radius: 15px;
+}
+
+/* ============================= */
+/* FOOTER */
+/* ============================= */
+
+footer img {
+  max-width: 180px;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer ul li {
+  margin-bottom: 6px;
+}
+
+.social {
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+/* ============================= */
+/* MOBILE VIEW (max-width: 576px) */
+/* ============================= */
+
+@media (max-width: 576px) {
+
+  /* Navbar */
+  .navbar-brand img {
+    width: 120px;
+    height: auto;
+  }
+
+  .navbar-nav {
+    text-align: center;
+  }
+
+  /* Headings */
+  h2 {
+    font-size: 22px;
+  }
+
+  /* Cards: 1 per row */
+  .col-md-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .card img.item-size {
+    height: 180px;
+  }
+
+  .card h5 {
+    font-size: 15px;
+  }
+
+  /* Buttons full width */
+  .card .btn {
+    width: 100%;
+  }
+
+  /* Marquee text */
+  marquee h2 {
+    font-size: 18px;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+  }
+
+  footer .col-md-3 {
+    margin-bottom: 20px;
+  }
+}
+
+/* ============================= */
+/* TABLET VIEW (577px - 992px) */
+/* ============================= */
+
+@media (min-width: 577px) and (max-width: 992px) {
+
+  /* Cards: 2 per row */
+  .col-md-3 {
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .card img.item-size {
+    height: 200px;
+  }
+
+  h2 {
+    font-size: 26px;
+  }
+
+  .card h5 {
+    font-size: 16px;
+  }
+}
+
+/* ============================= */
+/* LARGE DESKTOP (unchanged) */
+/* ============================= */
+
+@media (min-width: 993px) {
+  .col-md-3 {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+}
+
