@@ -419,6 +419,7 @@ i{
     color: black;
     padding: 80px 20px;
     text-align: center;
+    
 }
 .hero-section h1 {
     font-size: 45px;
@@ -438,6 +439,7 @@ i{
     color:white;
     padding:120px 20px;
     text-align:center;
+    height: 400px;
 }
 
 .offer-hero h1{
@@ -467,3 +469,28 @@ i{
     padding:50px 0;
     text-align:center;
 }
+
+/* Why Choose Our Accessories */
+.why-box {
+  transition: 0.3s ease;
+  background: white;
+  
+}
+.why-box i {
+  color: #DC3545; 
+}
+.why-box .bi-gem {
+  text-shadow: none !important;   
+}
+
+
+
+.why-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  
+  
+}
+
+
+
