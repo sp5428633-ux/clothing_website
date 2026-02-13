@@ -64,3 +64,28 @@ function validate() {
 
     return isvalid; // false = stop submit, true = submit
 }
+// offer timer
+let timeLeft = 12 * 60 * 60; // 12 hours in seconds
+
+let timer = setInterval(function() {
+
+    let hours = Math.floor(timeLeft / 3600);
+    let minutes = Math.floor((timeLeft % 3600) / 60);
+    let seconds = timeLeft % 60;
+
+    document.getElementById("hours").innerHTML = 
+        String(hours).padStart(2, '0');
+    document.getElementById("minutes").innerHTML = 
+        String(minutes).padStart(2, '0');
+    document.getElementById("seconds").innerHTML = 
+        String(seconds).padStart(2, '0');
+
+    timeLeft--;
+
+    if (timeLeft < 0) {
+        clearInterval(timer);
+        document.querySelector(".timer-box").innerHTML = 
+            "Offer Expired";
+    }
+
+}, 1000);
