@@ -83,22 +83,31 @@
     <!-- main starts  -->
     <!-- section slider starts-->
     <section>
-        <div class="container-fluid mt-3 mb-3">
+        <div class="container-fluid mt-1 mb-5">
 
 
-            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+            <div id="carouselExampleInterval" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="2000">
+                    <div class="carousel-item active" data-bs-interval="5000" data-bs-pause="hover">
+                        <div class="overlay"></div>
+                        <img src="images/slider4.jpg" class="d-block w-100" alt="...">
+                        <div class="carousel-caption custom-caption">
+                            <h1 class="animate-text">Welcome to Crazy Fit</h1>
+                            <p class="animate-text-delay">Fashion that brings comfort, confidence, and modern style together.</p>
+                            <a href="men.html">
+                                <button class="btn btn-warning slider-btn">Shop Now</button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="carousel-item" data-bs-interval="3000">
                         <img src="images/slider3.jpg" class="d-block w-100" alt="...">
                     </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="images/slider1.jpg" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
+                    <div class="carousel-item" data-bs-interval="3000">
                         <img src="images/slider2.jpg" class="d-block w-100" alt="...">
                     </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="images/slider4.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="images/slider1.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
@@ -123,7 +132,7 @@
                 <div class="col-md-3 mt-2 mb-2 ">
                     <a href="men.html">
                         <div class="card" style="width: 18rem;">
-                            <h5 class="card-title text-center">Men's Wear</h5>
+                            <h5 class="card-title text-center fw-semibold">Men's Wear</h5>
                             <img src="images/men1.jpg" class="card-img-top" alt="">
 
                         </div>
@@ -132,7 +141,7 @@
                 <div class="col-md-3 mt-2 mb-2">
                     <a href="women.html">
                         <div class="card" style="width: 18rem;">
-                            <h5 class="card-title text-center">Women's Wear</h5>
+                            <h5 class="card-title text-center fw-semibold">Women's Wear</h5>
                             <img src="images/women1.jpg" class="card-img-top" alt="">
 
                         </div>
@@ -141,7 +150,7 @@
                 <div class="col-md-3 mt-2 mb-2">
                     <a href="kid.html">
                         <div class="card" style="width: 18rem;">
-                            <h5 class="card-title text-center">kid's Wear</h5>
+                            <h5 class="card-title text-center fw-semibold">kid's Wear</h5>
                             <img src="images/kid1.jpg" class="card-img-top" alt="">
 
                         </div>
@@ -150,7 +159,7 @@
                 <div class="col-md-3 mt-2 mb-2">
                     <a href="accessories.html">
                         <div class="card" style="width: 18rem;">
-                            <h5 class="card-title text-center">Accessories</h5>
+                            <h5 class="card-title text-center fw-semibold">Accessories</h5>
                             <img src="images/accessories1 (2).jpg" class="card-img-top" alt="">
 
                         </div>
@@ -174,8 +183,8 @@
                         <img src="images/men-sherwani1.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Sherwani</h5>
-                            <p class="card-text"> Elegant and royal sherwani made with premium fabric, perfect for
-                                weddings and special occasions.</p>
+                            <p class="card-text"> Royal sherwani made with premium fabric, perfect for
+                                weddings and occasions.</p>
                             <p><b>Price:</b> Rs.4999</p>
                             <button class="btn btn-primary btn-sm" onclick="count(this)">Add to
                                 Card</button>
@@ -253,7 +262,7 @@
                         <img src="images/h-acee (4).jpg" class="card-img-top" alt="...">
                         <div class="card-body">
                             <h5 class="card-title">Watch</h5>
-                            <p class="card-text"> Premium watch that matches both traditional and modern outfits.</p>
+                            <p class="card-text"> Premium watch for both traditional and modern outfits.</p>
                             <p><b>Price:</b> Rs.399</p>
                             <a href="accessories.html" class="btn btn-primary btn-sm"> View More Products</a>
                             <button type="button" class="btn btn-primary btn-sm " data-bs-toggle="modal"
@@ -395,7 +404,7 @@
                     </ul>
                 </div>
                 <div class="col-md-3 l-d">
-                    
+
                     <h2>Categories</h2>
                     <ul class="link_hover l-d">
                         <li><a class="link_hover" href="men.html">Men</a></li>
@@ -428,7 +437,7 @@
 
 
                 </div>
-            </div>/
+            </div>
         </div>
     </footer>
     <!-- footer ends  here -->

@@ -1,3 +1,94 @@
+/* .carousel-caption{
+color:#e9bf00;
+background:rgba(0,0,0,0.5);
+padding:30px;
+border-radius:15px;
+} */
+/* Make image responsive */
+.carousel-item img{
+height:60vh;
+object-fit:cover;
+}
+.carousel-item{
+position:relative;
+}
+
+.overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.5);
+z-index:1;
+}
+
+.custom-caption{
+z-index:2;
+bottom:30%;
+}
+.carousel-caption h1{
+font-size:55px;
+font-weight:bold;
+}
+
+.carousel-caption p{
+font-size:18px;
+}
+.slider-btn{
+padding:8px 15px;
+font-size:16px;
+border-radius:30px;
+}
+/* TEXT ANIMATION */
+.animate-text{
+animation: slideUp 2s ease forwards;
+opacity:0;
+}
+
+.animate-text-delay{
+animation: slideUp 2.5s ease forwards;
+opacity:0;
+}
+
+@keyframes slideUp{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+/* for home page slider */
+@media (max-width:768px){
+
+.carousel-item img{
+height:25vh;
+}
+
+.custom-caption{
+left:5%;
+right:5%;
+bottom:0%;
+text-align:center;
+}
+
+.carousel-caption h1{
+font-size:28px;
+}
+
+.carousel-caption p{
+font-size:14px;
+}
+.carousel-caption .slider-btn{
+padding:4px 12px;
+font-size:12px;
+}
+}
+
+
 .social {
     margin-right: 1000px;
     font-size: x-large;
@@ -78,6 +169,7 @@
     overflow: hidden;
     transition: all 0.35s ease;
     border-radius: 12px;
+    box-shadow: 1px 1px 6px rgb(153, 152, 152);
 }
 
 
@@ -262,56 +354,83 @@ i{
   box-shadow: 0 20px 55px rgba(0, 0, 0, 0.25);
 }
 
-
- .about-banner {
-  position: relative;
-  overflow: hidden;
-  border-radius: 20px;
- 
-}
-
-.about-banner img {
-  width: 100%;
-  height: auto;
-  transition: transform 0.6s ease;
- 
-}
-
-.about-banner::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.35);
-  opacity: 0;
-  transition: opacity 0.5s ease;
-}
-
-.about-banner:hover img {
-  transform: scale(1.08);
-}
-
-.about-banner:hover::after {
-  opacity: 1;
-}
-
-.about-banner-content {
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #fff;
-  z-index: 2;
-  transition: transform 0.5s ease;
-}
-
-.about-banner:hover {
-  transform: translateY(-5px);
-}
 .bi-lightning-charge{
   color: #D4AF37;
 }
+
+
+/* about hero */
+.about-hero-bg{
+position:relative;
+height:60vh;
+background:url("/images/hero-banner2.jpg") center/cover no-repeat;
+display:flex;
+align-items:center;
+justify-content:center;
+color:white;
+text-align:center;
+}
+
+/* Dark Overlay */
+.hero-overlay{
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.65);
+}
+
+/* Content */
+.hero-content{
+position:relative;
+z-index:2;
+max-width:700px;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:45px;
+font-weight:bold;
+}
+
+.hero-content p{
+font-size:18px;
+margin-top:15px;
+color:#ddd;
+}
+
+/* Gold Button */
+.btn-gold{
+border:none;
+padding:10px 20px;
+border-radius:30px;
+font-weight:bold;
+}
+
+@media (max-width:768px){
+
+.about-hero-bg{
+height:30vh;
+padding:10px;
+}
+
+.hero-content h1{
+font-size:25px;
+}
+
+.hero-content p{
+font-size:14px;
+}
+.hero-content .btn{
+padding:8px 8px;
+border-radius:30px;
+font-weight:400;
+}
+
+}
+
+
 
 .about-main{
   padding: 20px;
@@ -363,6 +482,7 @@ i{
     padding-left: 15px;
     padding-right: 15px;
   }
+  
 }
 
 @media (max-width: 576px) {
@@ -385,6 +505,11 @@ i{
     margin-left: auto;
     margin-right: auto;
   }
+  .special-offer{
+    text-align: center;
+    
+  }
+ 
 }
 /* sendmessage button */
 .send_btn {
@@ -466,10 +591,13 @@ i{
 }
 .bi-gift-fill{
  color: gold;
+ text-shadow: 4px 0px 0px red;
 }
 .bi-megaphone-fill{
 color: red;
+
 }
+
 
 
 
