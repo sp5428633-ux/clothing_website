@@ -597,12 +597,6 @@ font-weight:400;
 color: red;
 
 }
-
-
-
-
-
-
 /* Why Choose Our Accessories */
 .why-box {
   transition: 0.3s ease;
@@ -616,13 +610,9 @@ color: red;
   text-shadow: none !important;   
 }
 
-
-
 .why-box:hover {
   transform: translateY(-8px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.15);
-  
-  
 }
 
 
